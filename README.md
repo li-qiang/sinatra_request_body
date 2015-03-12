@@ -1,12 +1,12 @@
 # SinatraRequestBody
 
-TODO: Write a gem description
+Merge request body to params for sinatra
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
+```
 gem 'sinatra_request_body'
 ```
 
@@ -20,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    require 'sinatra_request_body'
+    
+    register Sinatra::RequestBody
+
+or  work in your custom sinatra app
+    
+    require 'sinatra_request_body'
+    
+    class MyApp < Sinatra::Base
+    
+        register Sinatra::RequestBody
+        
+    end
 
 ## Contributing
 
